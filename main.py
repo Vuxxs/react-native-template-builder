@@ -8,7 +8,6 @@ def execute():
     # Fake progress bar lmao
     progress['value'] = 50
     window.update_idletasks()
-    sleep(2)
     buildTemplate()
     progress['value'] = 100
 
