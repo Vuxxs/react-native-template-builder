@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, TouchableOpacity, Alert } from 'react-native';
-import { Button, FlatList, Image, Pressable, Switch, Text, TextInput } from 'react-native';
+import { View, StyleSheet, Alert } from 'react-native';
+import { Button, Image, Pressable, Switch, Text, TextInput } from 'react-native';
 
 export default class Template extends Component {
 
@@ -22,7 +22,7 @@ export default class Template extends Component {
                 <Pressable onPress={() => {
                     Alert.alert("Pressable pressed!");
                 }}>
-                    <Text> I'm pressable!</Text>
+                    <Text> Pressable text </Text>
                 </Pressable>
 
                 <Switch

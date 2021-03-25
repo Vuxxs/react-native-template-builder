@@ -20,7 +20,7 @@ def getPressable():
     return """<Pressable onPress={() => {
                     Alert.alert("Pressable pressed!");
                 }}>
-                    <Text> I'm pressable!</Text>
+                    <Text> Pressable text </Text>
                 </Pressable>"""
 
 
