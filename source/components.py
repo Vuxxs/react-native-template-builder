@@ -1,5 +1,4 @@
-# Μια γραμμή για αυτά πάνω κάτω, τα Touchable θα έχουν δικό τους section.
-# Να μη ξεχάσουμε να βάλλουμε dummy values σε όσα χρειάζονται
+# You can add and edit components here.
 
 def getButton():
     return """<Button
