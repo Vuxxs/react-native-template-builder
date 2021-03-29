@@ -41,7 +41,6 @@ def getTextInput():
     return """<TextInput
                     style={styles.textInput}
                     onChangeText={() => { Alert.alert("TextInput changed!") }}
-                    value={10}
-                    placeholder="useless placeholder"
+                    placeholder="text input"
                     keyboardType="numeric"
                 />"""
