@@ -2,7 +2,7 @@
 
 def getButton():
     return """<Button
-                    title="Press me"
+                    title="Button"
                     color="#f194ff"
                     onPress={() => Alert.alert("Button pressed!")}
                 />"""
