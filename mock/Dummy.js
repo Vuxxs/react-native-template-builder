@@ -4,7 +4,7 @@ import { Button, Image, Pressable, Switch, Text, TextInput } from 'react-native'
 
 export default class Template extends Component {
 
-    image = require('./../dump/sample.jpg');
+    image = require('./sample.jpg');
     render() {
         return (
             <View style={styles.container}>
@@ -27,10 +27,10 @@ export default class Template extends Component {
 
                 <Switch
                     trackColor={{ false: "#767577", true: "#81b0ff" }}
-                    thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+                    thumbColor={"#f5dd4b"}
                     ios_backgroundColor="#3e3e3e"
                     onValueChange={() => { Alert.alert("Switch pressed!") }}
-                    value={isEnabled}
+                    value={0}
                 />
 
                 <Text style={styles.text}> Plain text </Text>

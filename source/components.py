@@ -25,11 +25,11 @@ def getPressable():
 
 def getSwitch():
     return """<Switch
-                    trackColor={{ false: "#767577", true: "#81b0ff" }}
+                    trackColor={"#81b0ff"}
                     thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
                     ios_backgroundColor="#3e3e3e"
                     onValueChange={() => { Alert.alert("Switch pressed!") }}
-                    value={isEnabled}
+                    value={0}
                 />"""
 
 
