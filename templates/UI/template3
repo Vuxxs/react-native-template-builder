@@ -1,0 +1,15 @@
+// Χωρίς Μενού
+<View style={styles.container}>
+    <Header style={styles.paragraph}>
+        Επικεφαλίδα
+    </Header>
+
+    <Content>
+        *textInput*
+        *image*
+        *button*
+    </Content>
+
+    <Footer>
+    </Footer>
+</View>

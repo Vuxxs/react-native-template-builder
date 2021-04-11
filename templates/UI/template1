@@ -1,0 +1,20 @@
+// Μενού Επάνω
+<View style={styles.container}>
+    <Header style={styles.paragraph}>
+        Επικεφαλίδα
+    </Header>
+
+    <Menu>
+        <Επιλογή 1 />
+        <Επιλογή 2 />
+    </Menu>
+
+    <Content>
+        *textInput*
+        *image*
+        *button*
+    </Content>
+
+    <Footer>
+    </Footer>
+</View>
