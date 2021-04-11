@@ -1,44 +1,46 @@
-# Μια γραμμή για αυτά πάνω κάτω, τα Touchable θα έχουν δικό τους section.
-
-def getText():
-  return "<Text style={styles.text}> </Text>"
+# You can add and edit components here.
 
 def getButton():
-  return """<Button
-  onPress={() => {}}
-  title="Learn More"
-  color="#841584"
-  accessibilityLabel="Learn more about this purple button"
-/>"""
- 
+    return """<Button
+                    title="Button"
+                    color="#f194ff"
+                    onPress={() => Alert.alert("Button pressed!")}
+                />"""
+
 
 def getImage():
-  return """<Image
-    style={styles.containers}
-    source="@expo/snack-static/react-native-logo.png"
-/>"""
+    return """<Image
+                    style={styles.image}
+                    source={this.image}
+                />"""
 
-def getImageBackground():
-  return  """ImageBackground
-  source = {image}
-  style = {styles.containers}
-  />"""
 
-def getSectionList():
-  return "<SectionList style={styles.title}>{title}</SectionList>"
+def getPressable():
+    return """<Pressable onPress={() => {
+                    Alert.alert("Pressable pressed!");
+                }}>
+                    <Text> Pressable text </Text>
+                </Pressable>"""
 
-def getStatusBar():
-  return """<StatusBar
-    onPress={() => {}}
-    title="Toggle StatusBar"
-    />"""
 
-def getTouchableHighlight():
-  return """TouchableHighlight
-      onPress={( => {})}
-      style={styles.container}
-      title="Touch Here"
-      />"""
+def getSwitch():
+    return """<Switch
+                    trackColor={"#81b0ff"}
+                    thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+                    ios_backgroundColor="#3e3e3e"
+                    onValueChange={() => { Alert.alert("Switch pressed!") }}
+                    value={0}
+                />"""
 
-def getVirtualizedList():
-  return "<VirtualizedList style={styles.item>{item}</VirtualizedList style>"
+
+def getText():
+    return "<Text style={styles.text}> Plain text </Text>"
+
+
+def getTextInput():
+    return """<TextInput
+                    style={styles.textInput}
+                    onChangeText={() => { Alert.alert("TextInput changed!") }}
+                    placeholder="text input"
+                    keyboardType="numeric"
+                />"""
