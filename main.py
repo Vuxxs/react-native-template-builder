@@ -2,13 +2,13 @@ from time import sleep
 from tkinter import *
 from tkinter.ttk import Progressbar
 from source.builder import buildTemplate
-from source.buildFromFile import buildFromFile
+
 
 def execute():
     # Fake progress bar lmao
     progress['value'] = 50
     window.update_idletasks()
-    buildFromFile(menu_position.get())
+    buildTemplate(10)
     progress['value'] = 100
 
 
