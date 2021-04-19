@@ -6,17 +6,21 @@ from random import randrange
 from source.components import *
 
 
+def getRandomFile(dir):
+    files = os.listdir("./templates/" + dir)
+    f = open("./templates/" + dir + str(randrange(len(files)) + 1))
+    return f.read()
+
+
 def buildTemplate(numOfComponents):
     # Initialization phase
     template = ""
 
     # Pick a random template
-    files = os.listdir("./templates/Views")
-    f = open("./templates/Views/" + str(randrange(len(files)) + 1))
-    template += f.read()
-    f.close()
+    template += getRandomFile("Views/Top/")
 
     template += "\n\n"
+
     # Place Random Components
     components = [getButton(), getImage(), getPressable(),
                   getSwitch(), getText(), getTextInput()]
@@ -25,14 +29,9 @@ def buildTemplate(numOfComponents):
         template += componentPicked + "\n\n"
 
     # You might want to remove this if you need a component to be in the bottom.
-    template += """\t\t\t</View>
-        );
-    }
-}\n\n"""
-    files = os.listdir("./templates/Stylesheets/")
-    f = open("./templates/Stylesheets/" + str(randrange(len(files)) + 1))
-    template += f.read()
-    f.close()
+    template += getRandomFile("Views/Bottom/")
+    template += "\n\n"
+    template += getRandomFile("Stylesheets/")
     # Append the stylesheet and finish the process
 
     # Write to file
