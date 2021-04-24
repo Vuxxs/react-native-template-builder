@@ -2,3 +2,6 @@
 .idea
 __pycache__
 /Template.js
+/Lib/site-packages/
+/Scripts/
+/pyvenv.cfg
