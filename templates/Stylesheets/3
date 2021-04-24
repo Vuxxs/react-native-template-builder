@@ -1,0 +1,88 @@
+import React, { Component } from 'react';
+import { View, StyleSheet, Alert } from 'react-native';
+import { Button, Image, Pressable, Switch, Text, TextInput } from 'react-native';
+
+export default class Template extends Component {
+
+    image = require('./mock/sample.jpg');
+    render() {
+        return (
+            <View style={styles.container}>
+                
+                <Switch
+                    trackColor={{ false: "#767577", true: "#81b0ff" }}
+                    thumbColor={"#f5dd4b"}
+                    ios_backgroundColor="#3e3e3e"
+                    onValueChange={() => { Alert.alert("Switch pressed!") }}
+                    value={0}
+                />
+                
+                <Pressable onPress={() => {
+                    Alert.alert("Pressable pressed!");
+                }}>
+                    <Text> Pressable text </Text>
+                </Pressable>
+                <Image
+                    style={styles.image}
+                    
+                    source={this.image}
+                />
+
+                
+               
+
+                
+
+                
+
+                <TextInput
+                    style={styles.textInput}
+                    onChangeText={() => { Alert.alert("TextInput changed!") }}
+                    value={10}
+                    placeholder="useless placeholder"
+                    keyboardType="numeric"
+                />
+                <Text style={styles.text}> I moved the text here because lol </Text>
+                 <Button
+                    title="Press me"
+                    color="#f5dd4b"
+                    onPress={() => Alert.alert("Button pressed!")}
+                />
+            </View>
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 15,
+        backgroundColor: "#9e17ce",
+    },
+
+    image: {
+        resizeMode: "center",
+        
+        width: 300,
+        height: 200
+        
+    },
+
+    text: {
+        
+        fontSize: 25,
+        fontWeight: "900"
+    },
+
+    textInput: { 
+        
+        borderColor: "#2556db",
+        borderTopRightRadius: 20,
+        borderBottomRightRadius: 20,
+        borderBottomLeftRadius: 20,
+        borderTopLeftRadius: 20,
+        height: 200,
+        margin: 90,
+        borderWidth: 15
+    }
+});
