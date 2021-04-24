@@ -1,0 +1,99 @@
+import React, { Component } from 'react';
+import { View, StyleSheet, Alert } from 'react-native';
+import { Button, Image, Pressable, Switch, Text, TextInput } from 'react-native';
+
+export default class Template extends Component {
+
+    image = require('./mock/sample.jpg');
+    render() {
+        return (
+            <View style={styles.container}>
+                 <Pressable onPress={() => {
+                    Alert.alert("Pressable pressed!");
+                }}>
+                </Pressable>
+                <Image
+                    style={styles.image}
+                    source={this.image}
+                />
+                
+              <View style={styles.container2}>
+               
+                <TextInput
+                    style={styles.textInput}
+                    onChangeText={() => { Alert.alert("TextInput changed!") }}
+                    value={0}
+                    placeholder="useless placeholder"
+                    keyboardType="numeric"
+                />
+                <TextInput
+                    style={styles.textInput}
+                    onChangeText={() => { Alert.alert("TextInput changed!") }}
+                    value={0}
+                    placeholder="useless placeholder"
+                    keyboardType="numeric"
+                /> 
+              </View> 
+                <Switch
+                    style={styles.switch}
+                    trackColor={{ false: "#767577", true: "#81b0ff" }}
+                    thumbColor={"#e71010"}
+                    ios_backgroundColor="#3e3e3e"
+                    onValueChange={() => { Alert.alert("Switch pressed!") }}
+                    value={0}
+                />    
+               
+                <Text style={styles.text}> /\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\         </Text>
+               
+                <Button
+                    title="Press me"
+                    color="#e71010"
+                    onPress={() => Alert.alert("Button pressed!")}
+                />
+            </View>
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10,
+        backgroundColor: "#3c3440",
+    },
+    container2: {
+      flexDirection: "row"
+
+    },
+    switch: { 
+        width: 160,
+
+
+    },
+    image: {
+      resizeMode: "center", 
+        width: 320,
+        height: 180
+    },
+    textInput: {
+        
+        borderColor: "#e71010",
+        borderTopRightRadius: 90,
+        borderBottomRightRadius: 90,
+        borderBottomLeftRadius: 90,
+        borderTopLeftRadius: 90,
+        width: 0,
+        height: 130,
+        margin: 10,
+        borderWidth: 69
+    },
+    
+
+    text: {
+        fontSize: 25,
+        fontWeight: "200"
+    }
+    
+
+    
+});
