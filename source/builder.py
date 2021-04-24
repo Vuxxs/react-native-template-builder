@@ -4,6 +4,7 @@
 import os
 from random import randrange
 from source.components import *
+from source.makeStylesheet import makeStylesheet
 
 
 def getRandomFile(dir):
@@ -21,17 +22,27 @@ def buildTemplate(numOfComponents):
 
     template += "\n\n"
 
+    f = open("./templates/Stylesheets/Random", "w")
+    head = open("./templates/Stylesheets/Head")
+    f.write(head.read())
+    head.close()
+    f.close()
+
     # Place Random Components
-    components = [getButton(), getImage(), getPressable(),
-                  getSwitch(), getText(), getTextInput()]
+    components = [getButton, getImage, getPressable,
+                  getSwitch, getText, getTextInput]
+
     for x in range(numOfComponents):
-        componentPicked = components[randrange(len(components))]
-        template += componentPicked + "\n\n"
+        componentPicked = components[randrange(len(components))]()
+        template += componentPicked[0] + "\n\n"
+        makeStylesheet(componentPicked[1])
 
     # You might want to remove this if you need a component to be in the bottom.
     template += getRandomFile("Views/Bottom/")
     template += "\n\n"
-    template += getRandomFile("Stylesheets/")
+
+    f = open("./templates/Stylesheets/Random")
+    template += f.read() + "});"
     # Append the stylesheet and finish the process
 
     # Write to file
