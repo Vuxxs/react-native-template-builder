@@ -42,7 +42,7 @@ export default class Template extends Component {
                     placeholder="useless placeholder"
                     keyboardType="numeric"
                 />
-                <Text style={styles.text}> I moved the text here because lol </Text>
+                <Text style={styles.text}> I moved the text here because testing </Text>
                  <Button
                     title="Press me"
                     color="#f5dd4b"
