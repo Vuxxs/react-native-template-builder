@@ -5,43 +5,36 @@ const styles = StyleSheet.create({
         backgroundColor: "#FFFFFF",
         justifyContent: 'center'
     },
-	swmQJbNGAiijph: {
-        alignSelf: 'stretch'
+	prymhDeTswTJVk: {
+        backgroundColor: '#6FB8FC'
     },
 
-	tiAFrrtmvNVkyb: {
-        backgroundColor: '#2F2881',
+	imdkDyOjgLECpm: {
+        width: 54,
+        height: 86,
+        alignSelf: 'center'
+    },
+
+	prwTnmYFBdJhbq: {
+        backgroundColor: '#E18192'
+    },
+
+	imlKdadeIEzowQ: {
+        width: 54,
+        height: 95,
         alignSelf: 'flex-end'
     },
 
-	teQOCpeQSevDfb: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        alignSelf: 'stretch'
+	tiQWKKthIZKwKF: {
+        backgroundColor: '#7A38F8',
+        alignSelf: 'center'
     },
 
-	tikpCyKhvGBOXA: {
-        backgroundColor: '#16A607',
-        alignSelf: 'flex-start'
+	prXqoctDsXxIpN: {
+        backgroundColor: '#1F18FA'
     },
 
-	tioYvohAeYkvdw: {
-        backgroundColor: '#53386C',
-        alignSelf: 'flex-end'
-    },
-
-	sweaXddgeyTRua: {
-        alignSelf: 'flex-start'
-    },
-
-	tetQZonYWnWYPb: {
-        fontSize: 15,
-        fontWeight: 'bold',
-        alignSelf: 'flex-start'
-    },
-
-	tiUBEKNCsxVVzg: {
-        backgroundColor: '#0E41A8',
-        alignSelf: 'flex-start'
+	prckjsnGwmepYF: {
+        backgroundColor: '#5BAEA7'
     },
 

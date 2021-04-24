@@ -1,5 +1,4 @@
-
 .vscode
 .idea
-*.pyc
+__pycache__
 /Template.js

@@ -1,15 +1,11 @@
 import random
 
+from source.randomHex import getRandomHexColor
+
 
 def getRandomAlignment():
     alignments = ["'center'", "'flex-end'", "'flex-start'", "'stretch'"]
     return alignments[random.randrange(len(alignments))]
-
-
-# https://stackoverflow.com/questions/13998901/generating-a-random-hex-color-in-python/18035471
-def getRandomHexColor():
-    def r(): return random.randint(0, 255)
-    return "'#%02X%02X%02X'" % (r(), r(), r())
 
 
 def makeComponent(key):
@@ -24,7 +20,7 @@ def makeComponent(key):
     },\n\n"""
     elif(key.startswith("pr")):
         return "\t" + key + """: {
-        backgroundColor: """ + getRandomHexColor() + """
+        backgroundColor: '""" + getRandomHexColor() + """'
     },\n\n"""
     elif(key.startswith("sw")):
         return "\t" + key + """: {
@@ -38,7 +34,7 @@ def makeComponent(key):
     },\n\n"""
     elif(key.startswith("ti")):
         return "\t" + key + """: {
-        backgroundColor: """ + getRandomHexColor() + """,
+        backgroundColor: '""" + getRandomHexColor() + """',
         alignSelf: """ + getRandomAlignment() + """
     },\n\n"""
 

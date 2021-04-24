@@ -1,7 +1,8 @@
 # You can add and edit components here.
 
-from random import choice
 import string
+from random import choice
+from source.randomHex import getRandomHexColor
 
 
 def generateKey():
@@ -15,7 +16,7 @@ def getButton():
     key = "bu" + generateKey()
     return ["""\t\t\t\t<Button
 \t\t\t\t\ttitle="Button"
-\t\t\t\t\tcolor="#f194ff"
+\t\t\t\t\tcolor='""" + getRandomHexColor() + """'
 \t\t\t\t\tonPress={() => Alert.alert("Button pressed!")}
 \t\t\t\t/>""", key]
 
@@ -41,8 +42,8 @@ def getSwitch():
     key = "sw" + generateKey()
     return ["""\t\t\t\t<Switch
 \t\t\t\t\tstyle={styles.""" + key + """}
-\t\t\t\t\ttrackColor={"#81b0ff"}
-\t\t\t\t\tthumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+\t\t\t\t\ttrackColor={'""" + getRandomHexColor() + """'}
+\t\t\t\t\tthumbColor={isEnabled ? '""" + getRandomHexColor() + """' : '""" + getRandomHexColor() + """'}
 \t\t\t\t\tios_backgroundColor="#3e3e3e"
 \t\t\t\t\tonValueChange={() => { Alert.alert("Switch pressed!") }}
 \t\t\t\t\tvalue={0}
