@@ -1,0 +1,64 @@
+import React, { Component } from 'react';
+import { View, StyleSheet, Alert } from 'react-native';
+import { Button, Image, Pressable, Switch, Text, TextInput } from 'react-native';
+
+export default class Template extends Component {
+
+    image = require('./mock/sample.jpg');
+    render() {
+        return (
+            <View style={styles.container}>
+                <TextInput
+                    style={styles.textInput}
+                    onChangeText={() => { Alert.alert("TextInput changed!") }}
+                    value={10}
+                    placeholder="useless placeholder"
+                    keyboardType="numeric"
+                />
+                <Button
+                    title="Among us"
+                    color="#16edff"
+                    onPress={() => Alert.alert("Button pressed!")}
+                />
+
+                
+
+                
+
+
+                
+
+                
+            </View>
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10,
+        backgroundColor: "#16edff",
+    },
+
+    image: {
+        width: 100,
+        height: 100
+    },
+
+    text: {
+        fontSize: 25,
+        fontWeight: "bold"
+    },
+
+    textInput: {
+        borderColor: "#ececec",
+        borderTopRightRadius: 90,
+        borderBottomRightRadius: 90,
+        borderBottomLeftRadius: 90,
+        borderTopLeftRadius: 90,
+        height: 130,
+        margin: 10,
+        borderWidth: 69
+    }
+});

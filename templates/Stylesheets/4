@@ -1,0 +1,37 @@
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10,
+        backgroundColor: "#3c3440",
+    },
+    container2: {
+      flexDirection: "row"
+
+    },
+
+    image: {
+      resizeMode: "center", 
+        width: 320,
+        height: 180
+    },
+    textInput: {
+        
+        borderColor: "#e71010",
+        borderTopRightRadius: 90,
+        borderBottomRightRadius: 90,
+        borderBottomLeftRadius: 90,
+        borderTopLeftRadius: 90,
+        width: 0,
+        height: 130,
+        margin: 10,
+        borderWidth: 69
+    },
+    
+
+    text: {
+        fontSize: 25,
+        fontWeight: "200"
+    }
+    
+
+  
