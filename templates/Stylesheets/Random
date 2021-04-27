@@ -5,52 +5,50 @@ const styles = StyleSheet.create({
         backgroundColor: "#FFFFFF",
         justifyContent: 'center'
     },
-	tebDeYkRVmizeZ: {
-        fontSize: 23,
+	teVZauGdRGIkNW: {
+        fontSize: 13,
         fontWeight: 'bold',
-        alignSelf: 'stretch'
-    },
-
-	imgKHRucwCGEiN: {
-        width: 143,
-        height: 83,
-        alignSelf: 'stretch'
-    },
-
-	teYSCFzgsxvHOz: {
-        fontSize: 17,
-        fontWeight: 'bold',
-        alignSelf: 'stretch'
-    },
-
-	titEmyNOVxylkN: {
-        backgroundColor: '#F96AB5',
-        alignSelf: 'flex-end'
-    },
-
-	imgbLzScxPQFJw: {
-        width: 163,
-        height: 177,
         alignSelf: 'flex-start'
     },
 
-	prpbyUelSgEccz: {
-        backgroundColor: '#02BFB8'
+	tirTYIRoAruevK: {
+        backgroundColor: '#AB662C',
+        alignSelf: 'center'
     },
 
-	teDbhJEKBjBdQj: {
+	teTlxJudRPtTey: {
+        fontSize: 26,
+        fontWeight: 'bold',
+        alignSelf: 'flex-start'
+    },
+
+	swQrFhEjxybafP: {
+        alignSelf: 'flex-start'
+    },
+
+	imKuhtKGIkMfgk: {
+        width: 85,
+        height: 56,
+        alignSelf: 'stretch'
+    },
+
+	teqMtyHViiYxbH: {
+        fontSize: 22,
+        fontWeight: 'bold',
+        alignSelf: 'center'
+    },
+
+	tevptdPFEWZyNU: {
         fontSize: 12,
         fontWeight: 'bold',
         alignSelf: 'flex-end'
     },
 
-	swRoCfFGPStCTx: {
-        alignSelf: 'stretch'
+	pryxdYEayAYXvk: {
+        backgroundColor: '#C748C5'
     },
 
-	imajMYxvdCioXL: {
-        width: 190,
-        height: 196,
-        alignSelf: 'flex-end'
+	swDXhOIAvUtyKf: {
+        alignSelf: 'stretch'
     },
 

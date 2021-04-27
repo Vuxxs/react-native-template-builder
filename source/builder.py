@@ -46,6 +46,8 @@ def buildTemplate(numOfComponents):
     # Append the stylesheet and finish the process
 
     # Write to file
-    f = open("Template.js", "w")
+    files = os.listdir("./Generated Templates/")
+    f = open("./Generated Templates/Template_" +
+             str(len(files) + 1) + ".js", "w")
     f.write(template)
     f.close()

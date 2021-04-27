@@ -5,3 +5,7 @@ __pycache__
 /Lib/site-packages/
 /Scripts/
 /pyvenv.cfg
+/build
+/dist
+main.spec
+/Generated Templates/*.js
