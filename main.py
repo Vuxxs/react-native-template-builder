@@ -43,7 +43,9 @@ def execute():
     # Fake progress bar lmao
     progress['value'] = 50
     window.update_idletasks()
-    buildTemplate(10)
+
+    buildTemplate(num_text, num_text_input, num_switch, num_pressable, num_image, num_button)
+
     progress['value'] = 100
 
 
@@ -71,25 +73,25 @@ ltext = Label(window, text="πόσα buttons θέλετε;")
 ltext.grid(row=row)
 button = Entry(window)
 button.grid(row=row, column=1)
-row+=1
+row += 1
 
 ltext = Label(window, text="πόσα switches θέλετε;")
 ltext.grid(row=row)
 switch = Entry(window)
 switch.grid(row=row, column=1)
-row+=1
+row += 1
 
 ltext = Label(window, text="πόσα images θέλετε;")
 ltext.grid(row=row)
 image = Entry(window)
 image.grid(row=row, column=1)
-row+=1
+row += 1
 
 ltext = Label(window, text="πόσα pressables θέλετε;")
 ltext.grid(row=row)
 pressable = Entry(window)
 pressable.grid(row=row, column=1)
-row+=1
+row += 1
 
 b1 = Button(window, text="Δημιουργία GUI", command=execute)
 b1.grid(row=row)

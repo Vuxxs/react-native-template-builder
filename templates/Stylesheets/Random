@@ -5,52 +5,33 @@ const styles = StyleSheet.create({
         backgroundColor: "#FFFFFF",
         justifyContent: 'center'
     },
-	tinlWqvjcARynZ: {
-        backgroundColor: '#D5EC00',
-        alignSelf: 'center'
-    },
-
-	imcuCDmZrVnhbO: {
-        width: 186,
-        height: 109,
-        alignSelf: 'stretch'
-    },
-
-	imGjvnRChTTkEv: {
-        width: 153,
-        height: 55,
+	tiEUabIOwsdvqe: {
+        backgroundColor: '#F3ACFD',
         alignSelf: 'flex-end'
     },
 
-	swnbXKAibFDfJF: {
+	teBHTlKSngxFls: {
+        fontSize: 14,
+        fontWeight: 'bold',
         alignSelf: 'center'
     },
 
-	prGZyjPmZbGLkw: {
-        backgroundColor: '#FD6138'
-    },
-
-	teVsNZFfmoBcSi: {
-        fontSize: 15,
-        fontWeight: 'bold',
-        alignSelf: 'flex-end'
-    },
-
-	teBQkQHcjKVQnZ: {
-        fontSize: 13,
-        fontWeight: 'bold',
-        alignSelf: 'stretch'
-    },
-
-	imKsRGnMZSyVjO: {
-        width: 186,
-        height: 78,
-        alignSelf: 'stretch'
-    },
-
-	tehetatdyUdyzH: {
-        fontSize: 22,
-        fontWeight: 'bold',
+	swbRPXwuNniHap: {
         alignSelf: 'flex-start'
+    },
+
+	tePQgeDdLlYFoZ: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        alignSelf: 'center'
+    },
+
+	tiDMsjKpoIqoYc: {
+        backgroundColor: '#C22F68',
+        alignSelf: 'center'
+    },
+
+	prWwUVcIBuwKLW: {
+        backgroundColor: '#77E301'
     },
 
