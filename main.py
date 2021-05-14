@@ -1,8 +1,6 @@
-from time import sleep
 from tkinter import *
 from tkinter.ttk import Progressbar
 from source.builder import buildTemplate
-
 
 def execute():
     entryString = str(num_text_entry.get())
@@ -47,7 +45,6 @@ def execute():
     buildTemplate(num_text, num_text_input, num_switch, num_pressable, num_image, num_button)
 
     progress['value'] = 100
-
 
 window = Tk()
 window.wm_geometry("600x500")

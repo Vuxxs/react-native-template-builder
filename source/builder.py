@@ -44,10 +44,6 @@ def buildTemplate(num_text, num_text_input, num_switch, num_pressable, num_image
     head.close()
     f.close()
 
-    # Place Random Components
-    # components = [getButton, getImage, getPressable,
-    #               getSwitch, getText, getTextInput]
-
     for component in component_list:
         # componentPicked = components[randrange(len(components))]()
         template += component[0] + "\n\n"
@@ -62,8 +58,8 @@ def buildTemplate(num_text, num_text_input, num_switch, num_pressable, num_image
     # Append the stylesheet and finish the process
 
     # Write to file
-    files = os.listdir("./Generated Templates/")
-    f = open("./Generated Templates/Template_" +
+    files = os.listdir("./generated/")
+    f = open("./generated/Template_" +
              str(len(files) + 1) + ".js", "w")
     f.write(template)
     f.close()
